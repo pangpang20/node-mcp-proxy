@@ -1,5 +1,8 @@
 import { JsonRpcErrorResponse, JsonRpcErrorCode, JsonRpcError } from '../types/mcp.js';
 
+// 重新导出 JsonRpcErrorCode 以便其他模块使用
+export { JsonRpcErrorCode };
+
 /**
  * 创建 JSON-RPC 2.0 错误响应
  */

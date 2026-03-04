@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import { loadCliConfig, parseArgs } from './cli.js';
 import { StdioHandler } from './core/stdio-handler.js';
 import { HttpClient } from './core/http-client.js';
@@ -12,7 +10,7 @@ import { createErrorResponse, JsonRpcErrorCode } from './utils/errors.js';
  */
 async function main(): Promise<void> {
   // 检查是否是帮助或版本请求
-  const args = parseArgs();
+  parseArgs();
 
   // 加载配置
   let config;
